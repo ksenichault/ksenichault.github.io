@@ -1,0 +1,143 @@
+.project-block {
+  display: flex;
+  align-items: flex-start;  /* adjust vertical alignment */
+  justify-content: center;  /* centers the row horizontally */
+  margin: 20px 0;
+  position: relative;
+  width: 100%;             /* let it take full width */
+  max-width: 1100px;        /* optional, to limit extreme stretching */
+}
+
+
+.project-block.left {
+  flex-direction: row;
+  transform: rotate(-2deg);
+}
+
+.project-block.right {
+  flex-direction: row-reverse;
+  transform: rotate(2deg);
+}
+.image-container{
+  width: 90%;      
+  position: relative;
+}
+
+.image-container img, .image-container iframe {
+  width: 99%;
+  height: auto;
+  border: 5px solid var(--color-light);
+  display: block;
+}
+
+
+
+.text-container {
+  width: 100%;
+  padding: 20px;
+  background-color: var(--color-light);
+  margin:10px;
+}
+/* .text-container {
+  max-width: 400px; 
+  padding: 20px;
+  background-color: var(--color-light);
+  margin: 0 10px;  
+  text-align: center;
+} */
+/* .content {
+  padding: 2%;
+  width: 80vw;
+} */
+.content {
+  background-color: #fff;
+  background-image:
+    linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+    linear-gradient(#eee .1em, transparent .1em);
+  background-size: 100% 1.2em;
+  border-radius: 2%;
+  /* padding: 2%; */
+  display: flex;
+  flex-direction: column; /* stack blocks vertically */
+  align-items: center;    /* center blocks horizontally */
+  width: 100%;
+  max-width: 1200px;      /* optional max width */
+  margin: 0 auto;          /* center the container itself */
+}
+
+.squiggly-button{
+  position: absolute;
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+
+.squiggly-button:hover {
+  transform: translateY(-50%) scale(1.05);
+}
+
+
+.project-title {
+  text-align: center;
+}
+
+
+.header-row {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  padding: 5rem 0 0 0;
+}
+
+.project-title {
+  margin: 0;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .project-block {
+    flex-direction: column !important; /* stack image above text */
+    transform: none !important;        /* remove tilt */
+    align-items: center;               /* center content horizontally */
+  }
+
+  .image-container {
+    width: 100%;                        /* take full width */
+    margin-bottom: 15px;                /* spacing below image */
+  }
+
+  .text-container {
+    width: 90%;                          /* reduce width for padding */
+    margin: 0;
+    text-align: center;                  /* center text */
+  }
+
+  .content {
+    max-width: 95%;                      /* adjust container width */
+    padding: 1rem;
+  }
+
+  .image-container iframe {
+    width: 95%;           /* almost full width of container */
+    max-width: 100%;      /* prevent overflow */
+    height: auto;         /* keeps aspect ratio via aspect-ratio */
+  }
+
+   .header-row {
+    display: flex;
+    flex-direction: column;  /* stack vertically */
+    gap: 3rem;               /* spacing between button and title */
+  }
+
+  .project-title {
+    align-self: center;      /* center the title */
+  }
+
+  .squiggly-button {
+    align-self: flex-start;  /* align the button to the left */
+    left: auto;              /* ignore absolute left */
+    transform: none;         /* remove translateY */
+    margin-left: 10px;       /* small left margin */
+  }
+}

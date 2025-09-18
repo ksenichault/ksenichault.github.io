@@ -1,0 +1,156 @@
+.start-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    gap: 16px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    inset: 0;
+    /* radial aura background */
+    background: radial-gradient(ellipse at center,
+            /* ellipse shape, centered */
+            var(--color-dark-purple) 0%,
+            /* bright aura core */
+            var(--color-light-purple) 40%,
+            /* fade outward */
+            rgba(0, 0, 0, 0) 100%
+            /* fully transparent edge */
+        );
+
+    color: var(--color-light);
+}
+
+/* body {
+  margin: 0;
+  background: radial-gradient(
+    ellipse at center,
+    var(--color-dark-purple) 0%,
+    var(--color-light-purple) 40%,
+    var(--color-background) 100%
+  );
+} */
+/* .start-page {
+  width: 100vw;  
+  height: 100vh; 
+  margin: 0;      
+  padding: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+ 
+  align-items: center;
+  text-align: center;
+
+} */
+
+.header,
+.header-links {
+    position: absolute;
+    z-index: 10;
+    /* above stars */
+}
+
+html,
+body,
+#root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+h1 {
+    font-size: clamp(24px, 5vw, 50px);
+}
+
+
+
+#see-projects {
+    font-size: clamp(20px, 2vw, 30px);
+}
+
+
+img {
+    width: 100px;
+}
+
+.gallery {
+    position: absolute;
+    inset: 0;
+    /* full size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    z-index: 1;
+    /* behind text */
+}
+
+.gallery img {
+    position: absolute;
+    transition: transform 0.3s;
+    pointer-events: auto;
+    width: clamp(10px, 6vw, 120px);
+}
+
+.gallery img.star {
+
+    width: clamp(10px, 3vw, 120px);
+}
+
+.drawing:hover {
+    transform: scale(1.2) rotate(10deg);
+    z-index: 10;
+    pointer-events: auto;
+}
+
+
+
+.text-about-me {
+    width: 50vw;
+    position: relative;
+    z-index: 2;
+}
+
+.text-about-me p {
+    font-size: clamp(16px, 2.5vw, 40px);
+}
+
+button {
+    margin-top: 20px;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.header-links a:hover {
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 600px) {
+    .text-about-me p {
+        font-size: clamp(30px, 3.5vw, 40px);
+    }
+
+    h1 {
+        font-size: clamp(40px, 3.5vw, 40px);
+    }
+
+    #see-projects {
+        font-size: clamp(30px, 3.5vw, 40px);
+    }
+
+    .gallery img:nth-of-type(1) {
+        display: none;
+    }
+   
+}
