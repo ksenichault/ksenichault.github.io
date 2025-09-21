@@ -1,11 +1,15 @@
 .project-block {
   display: flex;
-  align-items: flex-start;  /* adjust vertical alignment */
-  justify-content: center;  /* centers the row horizontally */
+  align-items: flex-start;
+  /* adjust vertical alignment */
+  justify-content: center;
+  /* centers the row horizontally */
   margin: 20px 0;
   position: relative;
-  width: 100%;             /* let it take full width */
-  max-width: 1100px;        /* optional, to limit extreme stretching */
+  width: 100%;
+  /* let it take full width */
+  max-width: 1100px;
+  /* optional, to limit extreme stretching */
 }
 
 
@@ -18,12 +22,14 @@
   flex-direction: row-reverse;
   transform: rotate(2deg);
 }
-.image-container{
-  width: 90%;      
+
+.image-container {
+  width: 90%;
   position: relative;
 }
 
-.image-container img, .image-container iframe {
+.image-container img,
+.image-container iframe {
   width: 99%;
   height: auto;
   border: 5px solid var(--color-light);
@@ -36,8 +42,9 @@
   width: 100%;
   padding: 20px;
   background-color: var(--color-light);
-  margin:10px;
+  margin: 10px;
 }
+
 /* .text-container {
   max-width: 400px; 
   padding: 20px;
@@ -58,14 +65,18 @@
   border-radius: 2%;
   /* padding: 2%; */
   display: flex;
-  flex-direction: column; /* stack blocks vertically */
-  align-items: center;    /* center blocks horizontally */
+  flex-direction: column;
+  /* stack blocks vertically */
+  align-items: center;
+  /* center blocks horizontally */
   width: 100%;
-  max-width: 1200px;      /* optional max width */
-  margin: 0 auto;          /* center the container itself */
+  max-width: 1200px;
+  /* optional max width */
+  margin: 0 auto;
+  /* center the container itself */
 }
 
-.squiggly-button{
+.squiggly-button {
   position: absolute;
   left: 20px;
   transform: translateY(-50%);
@@ -94,50 +105,96 @@
   margin: 0;
 }
 
-/* Mobile responsiveness */
+
+
+.header-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.title-with-logos {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  /* space between title and logos */
+}
+
+.made-with {
+  display: flex;
+  align-items: center;
+  /* vertical alignment */
+  gap: 0.5rem;
+  /* space between text and logos */
+  justify-content: flex-start;
+  /* make content hug text */
+}
+
+.software-icons-project-page {
+  display: flex;
+  gap: 0.5rem;
+
+}
+
+.software-icon-project-page {
+  display: block;
+  border-radius: 0;
+}
+
 @media (max-width: 768px) {
   .project-block {
-    flex-direction: column !important; /* stack image above text */
-    transform: none !important;        /* remove tilt */
-    align-items: center;               /* center content horizontally */
+    flex-direction: column !important;
+    transform: none !important;
+    align-items: center;
   }
 
   .image-container {
-    width: 100%;                        /* take full width */
-    margin-bottom: 15px;                /* spacing below image */
+    width: 100%;
+    margin-bottom: 15px;
   }
 
   .text-container {
-    width: 90%;                          /* reduce width for padding */
+    width: 90%;
     margin: 0;
-    text-align: center;                  /* center text */
+    text-align: center;
   }
 
   .content {
-    max-width: 95%;                      /* adjust container width */
+    max-width: 90%;
     padding: 1rem;
   }
 
   .image-container iframe {
-    width: 95%;           /* almost full width of container */
-    max-width: 100%;      /* prevent overflow */
-    height: auto;         /* keeps aspect ratio via aspect-ratio */
+    width: 95%;
+    max-width: 100%;
+    height: auto;
   }
 
-   .header-row {
+  .header-row {
     display: flex;
-    flex-direction: column;  /* stack vertically */
-    gap: 3rem;               /* spacing between button and title */
+    flex-direction: column;
+    gap: 3rem;
+
   }
 
   .project-title {
-    align-self: center;      /* center the title */
+    align-self: center;
   }
 
+
   .squiggly-button {
-    align-self: flex-start;  /* align the button to the left */
-    left: auto;              /* ignore absolute left */
-    transform: none;         /* remove translateY */
-    margin-left: 10px;       /* small left margin */
+    align-self: flex-start;
+    margin-top:3rem;
+  }
+
+
+  .title-with-logos {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .made-with {
+    margin-top: 0;
   }
 }

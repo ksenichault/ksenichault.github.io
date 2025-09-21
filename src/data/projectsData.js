@@ -3,12 +3,13 @@
 const projectsData = [
 
     {
-        id: 1,
+        id: "beach-game",
         title: "Stylized Beach Game (Work-in-Progress)",
         category: "Games",
         image: "/img/game-basque/grass.png", 
         description: "Stylized 3D Landscape in Blender and Unity",
         link: "https://yourportfolio.com/blender-animation",
+        software:["blender", "unity", "substance-designer"],
         blocks: [
             {image: "/img/game-basque/grass.png", 
                 text: "This project is a work-in-progress, inspired by the landscapes of the Pays Basque region. I am exploring a stylized, Animal Crossing inspired aesthetic rather than realism, with the overall idea and composition still under development."},
@@ -19,11 +20,12 @@ const projectsData = [
             ]
     },
     {
-        id: 2,
+        id: "disney-princess-character-recognition",
         title: "Disney Princess Character Recognition",
         category: "AI",
         description: "Computer Vision, Image and Video Classification",
         image: "/img/princess-recognition/result-group-img.png",
+        software:["python"],
         blocks: [
             {
                 video: "https://drive.google.com/file/d/1ps8g49MYdwGnPSSX8002hpuLxToB3-5y/preview", text: "This project, completed for my Image Analysis and Computer Vision course, focused on recognizing Disney princesses in both images and videos using deep learning approaches.\
@@ -35,12 +37,13 @@ const projectsData = [
         ],
     },
     {
-        id: 20,
+        id: "gardenia-an-interactive-ar-garden-game",
         title: "Gardenia: An Interactive AR Garden Game",
         category: "Games",
         image: "/img/gardenia/gardenia-screen.png",
         description: "AR Game with Physical Interactions",
         link: "https://yourportfolio.com/blender-animation",
+        software:["unity"],
         blocks: [
             {
                 video: "https://drive.google.com/file/d/1wENKvNCJymManJxPElu2wYZeebpKEAqX/preview", text: "This project, developed as a group project, is an interactive AR experience, focuses on growing and managing virtual flowers using physical objects and gestures. Players interact with the game by planting seeds, watering flowers, and picking fully grown flowers, all while controlling weather conditions and time progression." },
@@ -51,12 +54,13 @@ const projectsData = [
         ],
     },
     {
-        id: 3,
+        id: "moonlight-manor-3d-escape-game",
         title: "Moonlight Manor - 3D Escape Game",
         category: "Games",
         image: "/img/escape-game/thumbnail.png",
         description: "3d Unity puzzle game",
         link: "https://github.com/yourname/ai-image-classifier",
+        software:["blender", "unity"],
         
         blocks: [
             {
@@ -68,12 +72,13 @@ const projectsData = [
         ],
     },
     {
-        id: 4,
+        id: "rewrite-your-past-vr-memory-manipulation",
         title: "Rewrite Your Past - VR Memory Manipulation",
         category: "UX",
         image: "/img/rewrite-your-past/emotion.png",
         description: "Critical Design of VR Memory Manipulation",
         link: "https://yourportfolio.com/blender-animation",
+        software:["blender", "figma"],
         blocks: [
             {
                 video: "https://drive.google.com/file/d/1n3ah3-oJifUrt5HANyWqFz4VZoF0K0WS/preview", text: "This project explores the ethical boundaries of immersive technology through a VR experience focused on memory manipulation. Designed as a critical provotype, Rewrite Your Past allows users to revisit personal memories, alter their environments, and reshape their emotions, only to reveal how easily those memories can be distorted or even replaced without consent." },
@@ -84,35 +89,38 @@ const projectsData = [
         ],
     },
     {
-        id: 5,
+        id: "interactive-data-visualization",
         title: "Interactive Data Visualization",
         category: "Web",
         image: "/img/names-vis/vis.png",
         description: "Gender Effects and Name Popularity Trends - with d3.js",
         link: "https://yourportfolio.com/blender-animation",
+        software:["html", "css", "js", "d3"],
         blocks: [
             {video: "https://drive.google.com/file/d/13iMkKDDT7S4pfDePSMLDy73-qhuC5-AF/preview", text: "Developed with D3.js, this interactive visualization explores how unisex baby names evolve across time and gender. A bar chart highlights the top 20 unisex names for any selected year, color-coded by male–female ratio. A line chart reveals how these proportions shift historically, while a detailed ratio chart appears when selecting specific points in time. Users can navigate the data by searching names, clicking directly on charts, or adjusting the year with a slider, making it easy to uncover naming trends and gender effects."},
         ]
     },
     {
-        id: 6,
+        id: "global-coffee-trends-interactive-data-visualization",
         title: "Global Coffee Trends - Interactive Data Visualization",
         category: "Web",
         image: "/img/coffee-vis/coffee-vis.png",
         description: "Coffee production and consumption visualization with d3.js",
         link: "https://yourportfolio.com/blender-animation",
+        software:["html", "css", "js", "d3"],
         blocks: [
             {video: "https://drive.google.com/file/d/1tWZBuj9f3pEHpn5Guwb5BS37zWulXZ6U/preview", text: "Developed with D3.js, this project visualizes the global coffee industry across trade, production, consumption, and pricing. The dashboard combines a choropleth map, dynamic bar charts, and line charts to show top producers, import/export networks, and long-term trends. Additional interactive views explore coffee type preferences worldwide with a radar chart, compare prices per cup and daily consumption using pictorial unit charts, and highlight lifetime coffee spending by country with a lollipop chart.\
             These visualizations make it easy to explore both global trade dynamics and cultural consumption habits, offering an engaging look at one of the world's most important commodities."},
         ]
     },
     {
-        id: 7,
+        id: "stylized-3d-game-assets",
         title: "Stylized 3D Game Assets",
         category: "3D",
         image: "/img/blender/game/bottle.png",
         description: "Low-Poly Models in Blender",
         link: "https://yourportfolio.com/blender-animation",
+        software:["blender"],
         blocks: [
             {image: "/img/blender/game/puit.png", text: "This is a collection of game-style 3D assets created over time, exploring different techniques and aesthetics. The set includes a low-poly well, a wooden crate with a hand-painted texture made in Procreate, and stylized bottles. "},
             {image: "/img/blender/game/bottle.png", text:"These models experiment with non-realistic, stylized styles often used in games."},
@@ -121,12 +129,13 @@ const projectsData = [
         ]
     },
     {
-        id: 8,
+        id: "tangled-inspired-realistic-scene",
         title: "Tangled-Inspired Realistic Scene",
         category: "3D",
         image: "/img/blender/tangled/tangled-1.png", 
         description: "Realistic scene in Blender",
         link: "https://yourportfolio.com/blender-animation",
+        software:["blender"],
         blocks: [
             {image: "/img/blender/tangled/tangled-1.png", 
                 text: "This project is inspired by the Disney movie 'Tangled', specifically the lantern scene. My goal was to capture the atmosphere of that scene by recreating it in Blender."},
@@ -135,12 +144,13 @@ const projectsData = [
             ]
     },
     {
-        id: 9,
+        id: "stylized-forest-scene",
         title: "Stylized Forest Scene",
         category: "3D",
         image: "/img/blender/nature_1.png", 
         description: "Forest Environment in Blender",
         link: "https://yourportfolio.com/blender-animation",
+        software:["blender"],
         blocks: [
             {image: "/img/blender/nature_1.png", 
                 text: "For this project, I wanted to create a stylized forest scene. The challenge was to find a balance between a semi-realistic look and a stylized, game-inspired finish. I first created each model (tree, butterfly, flower, rock, grass…), then spent time composing the environment."},
@@ -148,12 +158,13 @@ const projectsData = [
             ]
     },
     {
-        id: 10,
+        id: "stylized-food-model",
         title: "Stylized Food model",
         category: "3D",
         image: "/img/blender/soup.png", 
         description: "Stylized Ghibli-Inspired Soup Model in Blender",
         link: "https://yourportfolio.com/blender-animation",
+        software:["blender"],
         blocks: [
             {image: "/img/blender/soup.png", 
                 text: "For this project, I created a stylized soup model inspired by a Ghibli-style cartoon aesthetic, following a YouTube tutorial for guidance.\
@@ -163,19 +174,20 @@ const projectsData = [
     },
     
     {
-        id: 12,
+        id: "stylized-materials-for-games",
         title: "Stylized Materials for Games",
         category: "3D",
         image: "/img/substance-designer/sand.png",
         description: "Materials made with Substance Designer",
         link: "https://yourportfolio.com/blender-animation",
+        software:["blender", "substance-designer"],
         blocks: [
             {image: "/img/substance-designer/sand.png", 
-                text: "These are various stylized materials I created in Substance Designer, including tile, pavement, and sand materials."},
+                text: "These are various stylized materials I created in Substance Designer.These materials are intended for use in a game, designed to be slightly realistic while maintaining a stylized aesthetic."},
             {image: "/img/substance-designer/rock.png", 
-                text: "These materials are intended for use in a game, designed to be slightly realistic while maintaining a stylized aesthetic. "},
-            {image: "/img/substance-designer/pavement.png", },
-            {image: "/img/substance-designer/tile-green.png", },
+                text: "Rock Stylized Material"},
+            {image: "/img/substance-designer/pavement.png", text:"Pavement Stylized Material"},
+            {image: "/img/substance-designer/tile-green.png",text:"Tile Material" },
 
 
             ]

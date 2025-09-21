@@ -11,7 +11,7 @@
 
 @font-face {
   font-family: "Light";
-  src: url("../fonts/New5-Regular.ttf") format("truetype");
+  src: url("../fonts/New-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -95,18 +95,15 @@ p {
 }
 
 .header {
-  position: absolute;
   top: 0;
   left: 0;
   padding: 5px 20px;
-
 }
 
 .header-links {
-  position: absolute;
   top: 0;
   right: 0;
-  padding: 5px 20px;
+  padding: 5px 20px; 
 
   display: flex;
   flex-direction: column;
@@ -114,6 +111,19 @@ p {
   font-size: 30px;
 }
 
+/* default absolute positioning */
+.header.absolute,
+.header-links.absolute {
+  position: absolute;
+}
+
+/* fixed positioning for start page */
+.header.fixed,
+.header-links.fixed {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
 
 button {
   padding: 1rem;
@@ -139,6 +149,7 @@ button {
 }
 
 .header-links a img {
+  border-radius: 0;
   width: 24px;
   /* size of your icon */
   height: 24px;

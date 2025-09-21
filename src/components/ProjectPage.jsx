@@ -18,25 +18,10 @@ function ProjectPage() {
   const category = location.state?.category || "3D";
 
   const { id } = useParams(); // from the url
-  const project = projectsData.find((p) => p.id === parseInt(id));
+  const project = projectsData.find((p) => p.id === id);
 
   if (!project) return <p>Project not found</p>;
 
-  // return (
-  //     <div className="project-page">
-  //         <Link to="/" state={{ category }}>
-  //             <button>Go Back</button>
-  //         </Link>
-
-  //         <div className="project-content">
-  //             <h1>{project.title}</h1>
-  //             <img src={project.image} alt={project.title} />
-
-  //             <p>{project.description}</p>
-  //         </div>
-
-  //     </div>
-  // );
   return (
 
     <div className="project-page">
@@ -64,7 +49,41 @@ function ProjectPage() {
 
           <button className="squiggly-button">Go Back</button>
         </Link>
-        <h1 className="project-title">{project.title}</h1>
+
+
+        {/* <h1 className="project-title">{project.title}</h1> */}
+        <div className="title-with-logos">
+          <h1 className="project-title">{project.title}</h1>
+          <div className="made-with">
+            <span>Made with:</span>
+            <div className="software-icons-project-page">
+              {project.software.map((logo) => {
+                const logoSizes = {
+                  blender: 70,
+                  unity: 60,
+                  python: 70,
+                  html: 30,
+                  css: 30,
+                  js: 30,
+                  d3: 30,
+                  figma: 15,
+                  "substance-designer": 30,
+                };
+                const size = logoSizes[logo.toLowerCase()] || 40; 
+                return (
+                  <img
+                    key={logo}
+                    src={`/img/software-icons/dark/${logo}.svg`}
+                    alt={logo}
+                    className="software-icon-project-page"
+                    style={{ width: `${size}px` }}
+                  />
+                );
+              })}
+            </div>
+
+          </div>
+        </div>
       </div>
 
       <div className="content squiggly"  >
@@ -78,10 +97,10 @@ function ProjectPage() {
               <div className="image-container">
                 <div className="squiggly-wrapper">
                   {block.video ? (
-                 
-                    <iframe  src={block.video} allow="autoplay"  
+
+                    <iframe src={block.video} allow="autoplay"
                       allowFullScreen
-                     style={{ width: "600px", aspectRatio: "16/9", height: "auto", border: "none" }}></iframe>
+                      style={{ width: "600px", aspectRatio: "16/9", height: "auto", border: "none" }}></iframe>
 
                   ) : (
                     <img

@@ -4,12 +4,13 @@
 }
 
 .tabs-wrapper {
-  padding-left: 1rem; 
+  padding-left: 1rem;
   width: 80vw;
   margin: 0 auto;
 }
+
 .tabs-nav li.tab-item:first-child {
-  margin-left: -30px;  
+  margin-left: -30px;
 }
 
 .tabs-nav ul {
@@ -17,19 +18,19 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  height: 4rem;         
+  height: 4rem;
 }
 
 .tabs-nav li.tab-item {
   float: left;
-  width: 12rem;     
-  height: 4rem;      
-  margin: 0 0 0 -3rem; 
+  width: 12rem;
+  height: 4rem;
+  margin: 0 0 0 -3rem;
   position: relative;
   transition: transform 0.2s ease;
-  float: none;         
+  float: none;
   height: 100%;
-  
+
 }
 
 .tabs-nav li.tab-item.active {
@@ -43,74 +44,86 @@
   height: 100%;
   cursor: pointer;
   text-decoration: none;
-  
+
 }
 
 .tab-label {
-  display: flex;               
-  justify-content: center;     
-  align-items: center;         
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
 .tabs-nav svg {
-  width: 100%;        
-  height: 100%;       
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  display: block;     
+  display: block;
   pointer-events: none;
   filter: drop-shadow(3px 0 4px var(--color-dark-purple));
 }
 
-.imageContainer svg{
-  filter:none;
+.imageContainer svg {
+  filter: none;
 }
 
 .tabs-nav span {
   position: relative;
-  z-index: 2;                  
-  display: inline-block;      
+  z-index: 2;
+  display: inline-block;
   font-size: 1.5rem;
   color: var(--color-light);
-  text-align: center;          
+  text-align: center;
   margin: 0;
-  height: auto;                
+  height: auto;
   margin-left: -2rem;
-  margin-top:0.3rem;
+  margin-top: 0.3rem;
 }
 
 .tab-content {
-  z-index:100;
+  z-index: 100;
   clear: both;
   padding: 20px;
   width: 80vw;
   border-radius: 0.5rem;
   background: var(--color-light-purple);
   color: var(--color-light);
-  position: relative;   
-  margin-top: -1.5rem;  
+  position: relative;
+  margin-top: -1.5rem;
   min-height: 50vh;
-  margin-bottom:30px;
+  margin-bottom: 30px;
 }
 
-#project-title{
-  margin-top:30px;
+#project-title {
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 
 
 
 @media (max-width: 600px) {
+
   .tab-label {
-    justify-content: flex-end; /* push content to the right */
-    padding-right: 0rem;       /* optional spacing from edge */
+    justify-content: center;
   }
 
   .tabs-nav span {
-    margin-left: 0;            /* remove desktop offset */
+     margin-left: -0.8rem;       
   }
 
-  
+  .tabs-nav ul {
+    justify-content: center;
+  }
+
+  .tabs-nav li.tab-item {
+    height: 3.5rem;      
+    margin: 0 0 0 -1rem;
+  }
+
+  .tabs-nav span {
+    text-align: center;
+  }
+
 }

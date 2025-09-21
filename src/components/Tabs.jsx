@@ -16,7 +16,7 @@ function Tabs() {
         location.state?.category || "3D"
     );
 
-    const categories = ["3D", "Games", "AI", "UX", "Web"];
+    const categories = ["Games", "3D", "AI", "UX", "Web"];
 
     return (
         <nav role="navigation" className="tabs-nav">
