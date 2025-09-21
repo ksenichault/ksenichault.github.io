@@ -7,22 +7,38 @@
 // Passes the selected category to the gallery.
 import React, { useState } from "react";
 import Gallery from "./Gallery"
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
+import { useEffect } from "react";
 
 function Tabs() {
+    const navigate = useNavigate();
     const location = useLocation();
+    const query = new URLSearchParams(location.search);
 
-    const [activeCategory, setActiveCategory] = useState(
-        location.state?.category || "3D"
-    );
+    const categoryFromUrl = query.get("category"); // read from ?category=
+    const [activeCategory, setActiveCategory] = useState(categoryFromUrl || "Games");
 
     const categories = ["Games", "3D", "AI", "UX", "Web"];
+    useEffect(() => {
+        if (!categoryFromUrl) {
+            const searchParams = new URLSearchParams(location.search);
+            searchParams.set("category", activeCategory);
+            navigate(`${location.pathname}?${searchParams.toString()}`, { replace: true });
+        }
+    }, []);
+    const handleTabClick = (cat) => {
+        setActiveCategory(cat);
+
+        const searchParams = new URLSearchParams(location.search);
+        searchParams.set("category", cat);
+        navigate(`${location.pathname}?${searchParams.toString()}`, { replace: true });
+    };
+
 
     return (
         <nav role="navigation" className="tabs-nav">
             <div className="tabs-wrapper">
-
-
                 <ul>
                     {categories.map((cat, idx) => {
                         const isActive = activeCategory === cat;
@@ -34,7 +50,11 @@ function Tabs() {
                                 className={`tab-item ${isActive ? "active" : ""}`}
                                 style={{ zIndex }}
                             >
-                                <a onClick={() => setActiveCategory(cat)}>
+                                <a href="#"
+                                    onClick={(e) => {
+                                        e.preventDefault(); // prevents the page from jumping
+                                        handleTabClick(cat);
+                                    }}>
                                     <span className="tab-label">{cat}</span>
                                     <svg viewBox="0 0 122 40" className="tab-bg" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
 
@@ -57,26 +77,10 @@ function Tabs() {
             <div className="tab-content">
                 <Gallery category={activeCategory} />
             </div>
-            {/*      <div className="tab-content"
-                style={{
-                    // backgroundColor: categoryColors[activeCategory],
-                    backgroundColor: activeCategory !== categories
-                        ? "var(--color-tab-active)"
-                        : "var(--color-tabs)",
-                    color: "#fff", // adjust text color for contrast
-                }}>
-                <Gallery category={activeCategory} />
-            </div>
-        </div> */}
 
         </nav>
     );
 }
-
-
-
-// <div className="tabs-container">
-
 
 
 export default Tabs;

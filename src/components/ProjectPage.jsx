@@ -28,7 +28,7 @@ function ProjectPage() {
       <div className="header-row">
 
 
-        <Link to="/projects" state={{ category }}>
+        <Link to={`/projects?category=${category}`} state={{ category }}>
           <svg width="0" height="0">
             <defs>
               <filter id="squiggly">
