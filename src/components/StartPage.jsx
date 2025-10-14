@@ -50,7 +50,7 @@ function StartPage() {
             </svg>
 
             <div className="start-page">
-                <h1>Welcome to My Portfolio</h1>
+                <h1>Welcome to my Website</h1>
                 <div className="text-about-me">
                     <p>I'm Kimia Senichault, a M2 student in Computer Science - Interaction, Graphics and Design at Institut Polytechnique de Paris.</p>
                     <button id="see-projects" onClick={() => navigate("/projects?category=Games")}>
