@@ -8,7 +8,6 @@
 import React, { useState } from "react";
 import Gallery from "./Gallery"
 import { useLocation, useNavigate } from "react-router-dom";
-import { useSearchParams } from "react-router-dom";
 import { useEffect } from "react";
 
 function Tabs() {
@@ -24,9 +23,12 @@ function Tabs() {
         if (!categoryFromUrl) {
             const searchParams = new URLSearchParams(location.search);
             searchParams.set("category", activeCategory);
-            navigate(`${location.pathname}?${searchParams.toString()}`, { replace: true });
+
+            navigate(`${location.pathname}?${searchParams.toString()}`, {
+                replace: true
+            });
         }
-    }, []);
+    }, [categoryFromUrl, activeCategory, location.pathname, location.search, navigate]);
     const handleTabClick = (cat) => {
         setActiveCategory(cat);
 

@@ -1,10 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
 
 import Projects from "./Pages/Projects";
 
 import "./Styles/Projects.css"
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ProjectPage from './components/ProjectPage';
 import StartPage from './components/StartPage';
 

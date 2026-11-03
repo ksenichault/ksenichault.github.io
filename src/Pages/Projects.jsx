@@ -5,12 +5,10 @@ import { useLocation } from "react-router-dom";
 
 
 function Projects() {
-  const [currentPage, setCurrentPage] = useState(0);
 
 
   const location = useLocation();
   const initialCategory = location.state?.category || "3D";
-  const [activeCategory, setActiveCategory] = useState(initialCategory);
 
   return (
     <div>

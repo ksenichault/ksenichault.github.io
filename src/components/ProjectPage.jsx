@@ -98,7 +98,7 @@ function ProjectPage() {
                 <div className="squiggly-wrapper">
                   {block.video ? (
 
-                    <iframe src={block.video} allow="autoplay"
+                    <iframe src={block.video} title="Project video" allow="autoplay"
                       allowFullScreen
                       style={{ width: "600px", aspectRatio: "16/9", height: "auto", border: "none" }}></iframe>
 
