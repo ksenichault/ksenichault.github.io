@@ -6,18 +6,24 @@ const projectsData = [
         id: "beach-game",
         title: "Stylized Beach Game (Work-in-Progress)",
         category: "Games",
-        image: "/img/game-basque/grass.png", 
+        image: "/img/game-basque/grass.png",
         description: "Stylized 3D Landscape in Blender and Unity",
         link: "https://yourportfolio.com/blender-animation",
-        software:["blender", "unity", "substance-designer"],
+        software: ["blender", "unity", "substance-designer"],
         blocks: [
-            {image: "/img/game-basque/grass.png", 
-                text: "This project is a work-in-progress, inspired by the landscapes of the Pays Basque region. I am exploring a stylized, Animal Crossing inspired aesthetic rather than realism, with the overall idea and composition still under development."},
-            {image: "/img/game-basque/pavement.png", 
-                text: "To date, I have created the sand, tile, and rock textures using Substance Designer (my first experience with the software). "},
-            {image: "/img/game-basque/water.png", 
-                text: "The water was implemented with a custom shader in Unity, based on an online tutorial, and the grass model and shader were also developed following tutorial guidance. All models are currently being created in Blender and remain in progress."},
-            ]
+            {
+                image: "/img/game-basque/grass.png",
+                text: "This project is a work-in-progress, inspired by the landscapes of the Pays Basque region. I am exploring a stylized, Animal Crossing inspired aesthetic rather than realism, with the overall idea and composition still under development."
+            },
+            {
+                image: "/img/game-basque/pavement.png",
+                text: "To date, I have created the sand, tile, and rock textures using Substance Designer (my first experience with the software). "
+            },
+            {
+                image: "/img/game-basque/water.png",
+                text: "The water was implemented with a custom shader in Unity, based on an online tutorial, and the grass model and shader were also developed following tutorial guidance. All models are currently being created in Blender and remain in progress."
+            },
+        ]
     },
     {
         id: "disney-princess-character-recognition",
@@ -25,7 +31,7 @@ const projectsData = [
         category: "AI",
         description: "Computer Vision, Image and Video Classification",
         image: "/img/princess-recognition/result-group-img.png",
-        software:["python"],
+        software: ["python"],
         blocks: [
             {
                 video: "https://drive.google.com/file/d/1ps8g49MYdwGnPSSX8002hpuLxToB3-5y/preview", text: "This project, completed for my Image Analysis and Computer Vision course, focused on recognizing Disney princesses in both images and videos using deep learning approaches.\
@@ -43,32 +49,36 @@ const projectsData = [
         image: "/img/gardenia/gardenia-screen.png",
         description: "AR Game with Physical Interactions",
         link: "https://yourportfolio.com/blender-animation",
-        software:["unity"],
+        software: ["unity"],
         blocks: [
             {
-                video: "https://drive.google.com/file/d/1wENKvNCJymManJxPElu2wYZeebpKEAqX/preview", text: "This project, developed as a group project, is an interactive AR experience, focuses on growing and managing virtual flowers using physical objects and gestures. Players interact with the game by planting seeds, watering flowers, and picking fully grown flowers, all while controlling weather conditions and time progression." },
+                video: "https://drive.google.com/file/d/1wENKvNCJymManJxPElu2wYZeebpKEAqX/preview", text: "This project, developed as a group project, is an interactive AR experience, focuses on growing and managing virtual flowers using physical objects and gestures. Players interact with the game by planting seeds, watering flowers, and picking fully grown flowers, all while controlling weather conditions and time progression."
+            },
             {
-                image: "/img/gardenia/gardenia-screen.png", text: "The game features three types of flowers, each with unique growth requirements affected by weather, water levels, and temperature. A dynamic weather system impacts flower growth and water consumption, and visual and audio feedback were implemented to create an immersive and engaging experience." },
-            { image: "/img/gardenia/gardenia-interaction.png", text: "Physical objects like a QR-coded board, seed bags, a water cup, and a basket allow tangible interactions, making gameplay intuitive and interactive. Players monitor flower growth through UI indicators showing water levels, growth stage, and temperature, while using gestures and object placement to influence outcomes.\
+                image: "/img/gardenia/gardenia-screen.png", text: "The game features three types of flowers, each with unique growth requirements affected by weather, water levels, and temperature. A dynamic weather system impacts flower growth and water consumption, and visual and audio feedback were implemented to create an immersive and engaging experience."
+            },
+            {
+                image: "/img/gardenia/gardenia-interaction.png", text: "Physical objects like a QR-coded board, seed bags, a water cup, and a basket allow tangible interactions, making gameplay intuitive and interactive. Players monitor flower growth through UI indicators showing water levels, growth stage, and temperature, while using gestures and object placement to influence outcomes.\
                 " },
         ],
     },
     {
         id: "moonlight-manor-3d-escape-game",
-        title: "Moonlight Manor - 3D Escape Game",
+        title: "Moonlight Manor: 3D Escape Game",
         category: "Games",
         image: "/img/escape-game/thumbnail.png",
         description: "3d Unity puzzle game",
         link: "https://github.com/yourname/ai-image-classifier",
-        software:["blender", "unity"],
-        
+        software: ["blender", "unity"],
+
         blocks: [
             {
-                video: "https://drive.google.com/file/d/1wfM3WHbx2GAmkVnWi3DcfZCGN9SVdIY4/preview", text: "This project, completed as a group assignment, is a 3D local 2-player escape game called Moonlight Manor, built in Unity with fully custom 3D models and assets created in Blender. Players navigate six distinct rooms, solving puzzles such as locks, jigsaw puzzles, sliding 8 puzzles, laundry organization, and pipe rotation to progress through the manor. Each room features interactive objects, environmental details, and visual cues to guide the players, creating a cohesive and immersive experience." },
+                video: "https://drive.google.com/file/d/1wfM3WHbx2GAmkVnWi3DcfZCGN9SVdIY4/preview", text: "This project, completed as a group assignment, is a 3D local 2-player escape game called Moonlight Manor, built in Unity with fully custom 3D models and assets created in Blender. Players navigate six distinct rooms, solving puzzles such as locks, jigsaw puzzles, sliding 8 puzzles, laundry organization, and pipe rotation to progress through the manor. Each room features interactive objects, environmental details, and visual cues to guide the players, creating a cohesive and immersive experience."
+            },
             {
                 image: "/img/escape-game/cadenas.png", text: "I contributed primarily to the 3D modeling, environmental art, and puzzle design, ensuring each room was visually distinct and that puzzles were intuitive and engaging.\
                 I implemented most of the puzzle logic and interactive coding, handling how each puzzle responds to player actions, updates the game state, and triggers door unlocks, ensuring smooth and consistent gameplay across all rooms.\
-                 Lighting, props, and UI elements were crafted to enhance gameplay immersion, and sound effects were integrated to provide audio feedback for interactions. The project demonstrates a combination of interactive puzzle design, 3D asset creation, and environmental storytelling in a game context." },                
+                 Lighting, props, and UI elements were crafted to enhance gameplay immersion, and sound effects were integrated to provide audio feedback for interactions. The project demonstrates a combination of interactive puzzle design, 3D asset creation, and environmental storytelling in a game context." },
         ],
     },
     {
@@ -78,14 +88,16 @@ const projectsData = [
         image: "/img/rewrite-your-past/emotion.png",
         description: "Critical Design of VR Memory Manipulation",
         link: "https://yourportfolio.com/blender-animation",
-        software:["blender", "figma"],
+        software: ["blender", "figma"],
         blocks: [
             {
-                video: "https://drive.google.com/file/d/1n3ah3-oJifUrt5HANyWqFz4VZoF0K0WS/preview", text: "This project explores the ethical boundaries of immersive technology through a VR experience focused on memory manipulation. Designed as a critical provotype, Rewrite Your Past allows users to revisit personal memories, alter their environments, and reshape their emotions, only to reveal how easily those memories can be distorted or even replaced without consent." },
+                video: "https://drive.google.com/file/d/1n3ah3-oJifUrt5HANyWqFz4VZoF0K0WS/preview", text: "This project explores the ethical boundaries of immersive technology through a VR experience focused on memory manipulation. Designed as a critical provotype, Rewrite Your Past allows users to revisit personal memories, alter their environments, and reshape their emotions, only to reveal how easily those memories can be distorted or even replaced without consent."
+            },
             {
-                image: "/img/rewrite-your-past/emotion.png", text: "Players begin by selecting an emotion, represented as floating bubbles, and stepping into memories tied to that feeling. Once inside, they can modify elements such as weather, objects, or background scenery to reduce the intensity of negative emotions. However, the app eventually takes control, glitching into fabricated memories that overwrite the original ones, raising unsettling questions about authenticity and the fragility of memory." },       
-                {image:"/img/rewrite-your-past/change.png", text: "The experience combines interactive design in Figma, immersive 3D memory scenes modeled in Blender, and glitch animations edited in CapCut. User testing revealed both intrigue and discomfort, as intended, with participants noting the therapeutic potential of such tools alongside their dystopian dangers."},         
-                {image: "/img/rewrite-your-past/new-memory.png", text: "This project highlights the double-edged nature of VR: its power to heal through guided therapy, but also its capacity to blur reality and induce false memories. By provoking reflection rather than providing solutions, Rewrite Your Past critically engages with the future of memory, technology, and human perception." },
+                image: "/img/rewrite-your-past/emotion.png", text: "Players begin by selecting an emotion, represented as floating bubbles, and stepping into memories tied to that feeling. Once inside, they can modify elements such as weather, objects, or background scenery to reduce the intensity of negative emotions. However, the app eventually takes control, glitching into fabricated memories that overwrite the original ones, raising unsettling questions about authenticity and the fragility of memory."
+            },
+            { image: "/img/rewrite-your-past/change.png", text: "The experience combines interactive design in Figma, immersive 3D memory scenes modeled in Blender, and glitch animations edited in CapCut. User testing revealed both intrigue and discomfort, as intended, with participants noting the therapeutic potential of such tools alongside their dystopian dangers." },
+            { image: "/img/rewrite-your-past/new-memory.png", text: "This project highlights the double-edged nature of VR: its power to heal through guided therapy, but also its capacity to blur reality and induce false memories. By provoking reflection rather than providing solutions, Rewrite Your Past critically engages with the future of memory, technology, and human perception." },
         ],
     },
     {
@@ -95,9 +107,9 @@ const projectsData = [
         image: "/img/names-vis/vis.png",
         description: "Gender Effects and Name Popularity Trends - with d3.js",
         link: "https://yourportfolio.com/blender-animation",
-        software:["html", "css", "js", "d3"],
+        software: ["html", "css", "js", "d3"],
         blocks: [
-            {video: "https://drive.google.com/file/d/13iMkKDDT7S4pfDePSMLDy73-qhuC5-AF/preview", text: "Developed with D3.js, this interactive visualization explores how unisex baby names evolve across time and gender. A bar chart highlights the top 20 unisex names for any selected year, color-coded by male–female ratio. A line chart reveals how these proportions shift historically, while a detailed ratio chart appears when selecting specific points in time. Users can navigate the data by searching names, clicking directly on charts, or adjusting the year with a slider, making it easy to uncover naming trends and gender effects."},
+            { video: "https://drive.google.com/file/d/13iMkKDDT7S4pfDePSMLDy73-qhuC5-AF/preview", text: "Developed with D3.js, this interactive visualization explores how unisex baby names evolve across time and gender. A bar chart highlights the top 20 unisex names for any selected year, color-coded by male–female ratio. A line chart reveals how these proportions shift historically, while a detailed ratio chart appears when selecting specific points in time. Users can navigate the data by searching names, clicking directly on charts, or adjusting the year with a slider, making it easy to uncover naming trends and gender effects." },
         ]
     },
     {
@@ -107,9 +119,10 @@ const projectsData = [
         image: "/img/coffee-vis/coffee-vis.png",
         description: "Coffee production and consumption visualization with d3.js",
         link: "https://yourportfolio.com/blender-animation",
-        software:["html", "css", "js", "d3"],
+        software: ["html", "css", "js", "d3"],
         blocks: [
-            {video: "https://drive.google.com/file/d/1tWZBuj9f3pEHpn5Guwb5BS37zWulXZ6U/preview", text: "Developed with D3.js, this project visualizes the global coffee industry across trade, production, consumption, and pricing. The dashboard combines a choropleth map, dynamic bar charts, and line charts to show top producers, import/export networks, and long-term trends. Additional interactive views explore coffee type preferences worldwide with a radar chart, compare prices per cup and daily consumption using pictorial unit charts, and highlight lifetime coffee spending by country with a lollipop chart.\
+            {
+                video: "https://drive.google.com/file/d/1tWZBuj9f3pEHpn5Guwb5BS37zWulXZ6U/preview", text: "Developed with D3.js, this project visualizes the global coffee industry across trade, production, consumption, and pricing. The dashboard combines a choropleth map, dynamic bar charts, and line charts to show top producers, import/export networks, and long-term trends. Additional interactive views explore coffee type preferences worldwide with a radar chart, compare prices per cup and daily consumption using pictorial unit charts, and highlight lifetime coffee spending by country with a lollipop chart.\
             These visualizations make it easy to explore both global trade dynamics and cultural consumption habits, offering an engaging look at one of the world's most important commodities."},
         ]
     },
@@ -120,11 +133,11 @@ const projectsData = [
         image: "/img/blender/game/bottle.png",
         description: "Low-Poly Models in Blender",
         link: "https://yourportfolio.com/blender-animation",
-        software:["blender"],
+        software: ["blender"],
         blocks: [
-            {image: "/img/blender/game/puit.png", text: "This is a collection of game-style 3D assets created over time, exploring different techniques and aesthetics. The set includes a low-poly well, a wooden crate with a hand-painted texture made in Procreate, and stylized bottles. "},
-            {image: "/img/blender/game/bottle.png", text:"These models experiment with non-realistic, stylized styles often used in games."},
-            {image: "/img/blender/game/wood-crate.png", text:" Creating them allowed me to explore different techniques and find a style that I could refine and incorporate into a future game project."},
+            { image: "/img/blender/game/puit.png", text: "This is a collection of game-style 3D assets created over time, exploring different techniques and aesthetics. The set includes a low-poly well, a wooden crate with a hand-painted texture made in Procreate, and stylized bottles. " },
+            { image: "/img/blender/game/bottle.png", text: "These models experiment with non-realistic, stylized styles often used in games." },
+            { image: "/img/blender/game/wood-crate.png", text: " Creating them allowed me to explore different techniques and find a style that I could refine and incorporate into a future game project." },
 
         ]
     },
@@ -132,47 +145,52 @@ const projectsData = [
         id: "tangled-inspired-realistic-scene",
         title: "Tangled-Inspired Realistic Scene",
         category: "3D",
-        image: "/img/blender/tangled/tangled-1.png", 
+        image: "/img/blender/tangled/tangled-1.png",
         description: "Realistic scene in Blender",
         link: "https://yourportfolio.com/blender-animation",
-        software:["blender"],
+        software: ["blender"],
         blocks: [
-            {image: "/img/blender/tangled/tangled-1.png", 
-                text: "This project is inspired by the Disney movie 'Tangled', specifically the lantern scene. My goal was to capture the atmosphere of that scene by recreating it in Blender."},
-            
-            {image: "/img/blender/tangled/tangled-2.png", text:"I composed the scene with key elements: the lanterns, the water, and the boat, while experimenting with a more realistic style. I explored various lighting setups, color tones, and ambient effects to evoke the same enchanting mood as the original movie."},
-            ]
+            {
+                image: "/img/blender/tangled/tangled-1.png",
+                text: "This project is inspired by the Disney movie 'Tangled', specifically the lantern scene. My goal was to capture the atmosphere of that scene by recreating it in Blender."
+            },
+
+            { image: "/img/blender/tangled/tangled-2.png", text: "I composed the scene with key elements: the lanterns, the water, and the boat, while experimenting with a more realistic style. I explored various lighting setups, color tones, and ambient effects to evoke the same enchanting mood as the original movie." },
+        ]
     },
     {
         id: "stylized-forest-scene",
         title: "Stylized Forest Scene",
         category: "3D",
-        image: "/img/blender/nature_1.png", 
+        image: "/img/blender/nature_1.png",
         description: "Forest Environment in Blender",
         link: "https://yourportfolio.com/blender-animation",
-        software:["blender"],
+        software: ["blender"],
         blocks: [
-            {image: "/img/blender/nature_1.png", 
-                text: "For this project, I wanted to create a stylized forest scene. The challenge was to find a balance between a semi-realistic look and a stylized, game-inspired finish. I first created each model (tree, butterfly, flower, rock, grass…), then spent time composing the environment."},
-            
-            ]
+            {
+                image: "/img/blender/nature_1.png",
+                text: "For this project, I wanted to create a stylized forest scene. The challenge was to find a balance between a semi-realistic look and a stylized, game-inspired finish. I first created each model (tree, butterfly, flower, rock, grass…), then spent time composing the environment."
+            },
+
+        ]
     },
     {
         id: "stylized-food-model",
         title: "Stylized Food model",
         category: "3D",
-        image: "/img/blender/soup.png", 
+        image: "/img/blender/soup.png",
         description: "Stylized Ghibli-Inspired Soup Model in Blender",
         link: "https://yourportfolio.com/blender-animation",
-        software:["blender"],
+        software: ["blender"],
         blocks: [
-            {image: "/img/blender/soup.png", 
+            {
+                image: "/img/blender/soup.png",
                 text: "For this project, I created a stylized soup model inspired by a Ghibli-style cartoon aesthetic, following a YouTube tutorial for guidance.\
                 "},
-            
-            ]
+
+        ]
     },
-    
+
     {
         id: "stylized-materials-for-games",
         title: "Stylized Materials for Games",
@@ -180,18 +198,83 @@ const projectsData = [
         image: "/img/substance-designer/sand.png",
         description: "Materials made with Substance Designer",
         link: "https://yourportfolio.com/blender-animation",
-        software:["blender", "substance-designer"],
+        software: ["blender", "substance-designer"],
         blocks: [
-            {image: "/img/substance-designer/sand.png", 
-                text: "These are various stylized materials I created in Substance Designer.These materials are intended for use in a game, designed to be slightly realistic while maintaining a stylized aesthetic."},
-            {image: "/img/substance-designer/rock.png", 
-                text: "Rock Stylized Material"},
-            {image: "/img/substance-designer/pavement.png", text:"Pavement Stylized Material"},
-            {image: "/img/substance-designer/tile-green.png",text:"Tile Material" },
+            {
+                image: "/img/substance-designer/sand.png",
+                text: "These are various stylized materials I created in Substance Designer.These materials are intended for use in a game, designed to be slightly realistic while maintaining a stylized aesthetic."
+            },
+            {
+                image: "/img/substance-designer/rock.png",
+                text: "Rock Stylized Material"
+            },
+            { image: "/img/substance-designer/pavement.png", text: "Pavement Stylized Material" },
+            { image: "/img/substance-designer/tile-green.png", text: "Tile Material" },
 
 
-            ]
+        ]
     },
+
+    {
+        id: "vr-visual-impairment",
+        title: "VR Visual Impairment Awareness",
+        category: "Games",
+        image: "/img/vr-visual-impairment/thumbnail.png",
+        description: "VR city street experience simulating peripheral vision loss",
+        link: "[Your project link]",
+        software: ["unity"],
+        blocks: [
+            {
+                image: "/img/vr-visual-impairment/city.gif",
+                text: `I designed and developed a virtual city street scenario to raise awareness of peripheral vision loss. I chose street crossing as the main activity to illustrate the difficulties of navigating everyday environments with a restricted field of view. I created a guided sequence involving traffic, pedestrians and unexpected events, supported by voice narration and spatial audio.
+
+                Due to time constraints, I used existing 3D asset packages rather than modelling the assets myself. I then selected and manually arranged them to create the city environment I envisioned. I implemented vehicle and pedestrian animations using Cinemachine Dolly Tracks, as well as traffic light behaviour, car movements and interactions. I also added sound effects and visual feedback that react to events during the street crossing.`
+            },
+            {
+                image: "/img/vr-visual-impairment/tunnel-vision.png",
+                text: `I implemented a custom full-screen shader in Unity URP to simulate tunnel vision, combining radial masking, edge distortion and blur for a more realistic effect.`
+            },
+            {
+                image: "/img/vr-visual-impairment/interaction.gif",
+                text: `I wanted users to experience the difficulty of overcoming their visual impairment. I developed an XR controller interaction allowing users to temporarily expand their field of view by pressing both grip buttons and moving their hands apart, as if stretching their vision. As the view expands, increasing visual distortion makes it harder to see clearly. When the buttons are released, the field of view snaps back to its original narrow state.`
+            },
+
+
+        ]
+    },
+    {
+        id: "2d-clothing-game",
+        title: "Purr & Pattern: 2D Clothing Game",
+        category: "Games",
+        image: "/img/2d-clothing-game/thumbnail.png",
+        description: "2D clothing customization game for creating and styling virtual characters",
+        link: "[Your project link]",
+        software: ["unity"],
+
+        blocks: [
+            {
+                image: "/img/2d-clothing-game/thumbnail.png",
+                text: `I developed a 2D fashion customization game where players can create their own character, mix and match clothing items, and experiment with colors and patterns in a playful, interactive environment. The game was developed using Unity and C#, combining gameplay programming with UI development and custom shaders. I also designed and drew all the game's sprites.`
+            },
+            {
+                image: "/img/2d-clothing-game/character-selection.png",
+                text: `The character customization panel allows players to choose between different body types and hairstyles.`
+            },
+            {
+                image: "/img/2d-clothing-game/color-customization.png",
+                text: `Players can also customize the character's skin and hair colors using an interactive color palette, with changes applied instantly.`
+            },
+            {
+                image: "/img/2d-clothing-game/closet.gif",
+                text: `I implemented interactive closet mechanics, allowing players to open doors and drawers, slide hangers to browse clothing items, and drag clothes onto the character to equip them.`
+            },
+            {
+                image: "/img/2d-clothing-game/clothing-customization.png",
+                text: `I also worked on the clothing customization system, including color and pattern application, custom pattern imports, and suggested color combinations. Custom shaders were used to apply colors and patterns while preserving the original shape and transparency of the sprites.`
+            },
+           
+        ]
+    }
 
 ];
 

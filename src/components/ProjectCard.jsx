@@ -32,7 +32,13 @@ function ProjectCard({ project, category }) {
                         </defs>
                     </svg>
                     <div className="squiggly-wrapper">
-                        <img src={project.image} alt="" />
+                        {/* <img src={project.image} alt="" /> */}
+                        <img
+                            src={project.image}
+                            alt={project.title}
+                            loading="lazy"
+                            decoding="async"
+                        />
                         <svg className="squiggly-border" width="100%" height="100%">
                             <filter id="borderNoise">
                                 <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="4" />
