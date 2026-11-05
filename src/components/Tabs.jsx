@@ -18,7 +18,7 @@ function Tabs() {
     const categoryFromUrl = query.get("category"); // read from ?category=
     const [activeCategory, setActiveCategory] = useState(categoryFromUrl || "Games");
 
-    const categories = ["Games", "3D", "AI", "UX", "Web"];
+    const categories = ["Games", "AR/VR", "Computer Graphics", "3D Modeling", "AI", "UX", "Web"];
     useEffect(() => {
         if (!categoryFromUrl) {
             const searchParams = new URLSearchParams(location.search);

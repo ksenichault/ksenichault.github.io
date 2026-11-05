@@ -45,7 +45,7 @@ const projectsData = [
     {
         id: "gardenia-an-interactive-ar-garden-game",
         title: "Gardenia: An Interactive AR Garden Game",
-        category: "Games",
+        category: "AR/VR",
         image: "/img/gardenia/gardenia-screen.png",
         description: "AR Game with Physical Interactions",
         link: "https://yourportfolio.com/blender-animation",
@@ -129,7 +129,7 @@ const projectsData = [
     {
         id: "stylized-3d-game-assets",
         title: "Stylized 3D Game Assets",
-        category: "3D",
+        category: "3D Modeling",
         image: "/img/blender/game/bottle.png",
         description: "Low-Poly Models in Blender",
         link: "https://yourportfolio.com/blender-animation",
@@ -144,7 +144,7 @@ const projectsData = [
     {
         id: "tangled-inspired-realistic-scene",
         title: "Tangled-Inspired Realistic Scene",
-        category: "3D",
+        category: "3D Modeling",
         image: "/img/blender/tangled/tangled-1.png",
         description: "Realistic scene in Blender",
         link: "https://yourportfolio.com/blender-animation",
@@ -161,7 +161,7 @@ const projectsData = [
     {
         id: "stylized-forest-scene",
         title: "Stylized Forest Scene",
-        category: "3D",
+        category: "3D Modeling",
         image: "/img/blender/nature_1.png",
         description: "Forest Environment in Blender",
         link: "https://yourportfolio.com/blender-animation",
@@ -177,7 +177,7 @@ const projectsData = [
     {
         id: "stylized-food-model",
         title: "Stylized Food model",
-        category: "3D",
+        category: "3D Modeling",
         image: "/img/blender/soup.png",
         description: "Stylized Ghibli-Inspired Soup Model in Blender",
         link: "https://yourportfolio.com/blender-animation",
@@ -194,7 +194,7 @@ const projectsData = [
     {
         id: "stylized-materials-for-games",
         title: "Stylized Materials for Games",
-        category: "3D",
+        category: "3D Modeling",
         image: "/img/substance-designer/sand.png",
         description: "Materials made with Substance Designer",
         link: "https://yourportfolio.com/blender-animation",
@@ -218,7 +218,7 @@ const projectsData = [
     {
         id: "vr-visual-impairment",
         title: "VR Visual Impairment Awareness",
-        category: "Games",
+        category: "AR/VR",
         image: "/img/vr-visual-impairment/thumbnail.png",
         description: "VR city street experience simulating peripheral vision loss",
         link: "[Your project link]",
@@ -272,10 +272,41 @@ const projectsData = [
                 image: "/img/2d-clothing-game/clothing-customization.png",
                 text: `I also worked on the clothing customization system, including color and pattern application, custom pattern imports, and suggested color combinations. Custom shaders were used to apply colors and patterns while preserving the original shape and transparency of the sprites.`
             },
-           
+
+        ]
+    },
+    {
+        id: "menu-web-app",
+        title: "Interactive Digital Menu",
+        description: "Mobile restaurant ordering app",
+        category: "Web",
+        image: "/img/menu-web-app/thumbnail.png",
+        software: ["html", "css", "js", "react"],
+        blocks: [
+            {
+                image: "/img/menu-web-app/starters.png",
+                text: `We designed and prototyped an interactive digital menu for restaurants, aiming to improve the dining experience through a modern, accessible and easy-to-use interface. The mobile-first web app allows customers to scan a QR code at their table, browse the menu, customize dishes and place orders directly from their phones. We evaluated the prototype through usability testing with 8 participants, gathering feedback on the ordering experience and overall ease of use.`
+            },
+            {
+                image: "/img/menu-web-app/item-page.png",
+                text: `The app includes several features to simplify the ordering process, such as menu browsing, dietary filters (vegan, gluten-free, etc.), detailed dish information and ingredient customization. Customers can also manage their orders through a shopping cart, split the bill, leave special requests and rate their meals.`
+            }
+        ],
+    },
+    {
+        id: "planets-opengl",
+        title: "Solar System Simulation",
+        description: "OpenGL solar system simulation",
+        category: "Computer Graphics",
+        image: "/img/planets-opengl/thumbnail.png",
+        software: ["c++", "opengl"],
+        blocks: [
+            {
+                image: "/img/planets-opengl/planets.gif",
+                text: `I developed an interactive solar system simulation using OpenGL, featuring textured planets with different sizes, rotations and orbital animations. The Sun acts as the main light source, while interactive camera controls allow users to zoom in and out using the mouse.`
+            }
         ]
     }
-
 ];
 
 export default projectsData;

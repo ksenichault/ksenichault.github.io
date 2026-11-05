@@ -48,10 +48,18 @@
   display: inline-block;
 }
 
+/* .squiggly-wrapper img {
+  display: block;
+  width: 100%; 
+  height: auto;
+} */
+
 .squiggly-wrapper img {
   display: block;
-  width: 100%;  /* scales with container */
+  width: 100%;
   height: auto;
+  max-height: 450px;
+  object-fit: contain;
 }
 
 .squiggly-wrapper .squiggly-border {

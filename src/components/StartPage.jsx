@@ -52,7 +52,7 @@ function StartPage() {
             <div className="start-page">
                 <h1>Welcome to my Website</h1>
                 <div className="text-about-me">
-                    <p>I'm Kimia Senichault, a M2 student in Computer Science - Interaction, Graphics and Design at Institut Polytechnique de Paris.</p>
+                <p>I'm Kimia Senichault, a recent graduate in Computer Science, specialising in Interaction, Graphics and Design, from Institut Polytechnique de Paris.</p>
                     <button id="see-projects" onClick={() => navigate("/projects?category=Games")}>
                         See My Projects
                     </button>

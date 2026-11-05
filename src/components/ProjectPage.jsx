@@ -66,6 +66,7 @@ function ProjectPage() {
                   css: 30,
                   js: 30,
                   d3: 30,
+                  react: 30,
                   figma: 15,
                   "substance-designer": 30,
                 };
